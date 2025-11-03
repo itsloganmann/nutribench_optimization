@@ -256,20 +256,3 @@ Record costs per iteration and include them in your final presentation deck.
 | Rate limiting or flaky responses | Re-run the optimization with smaller batch sizes or insert delays using Typer options. Tenacity already retries transient failures. |
 | Dataset splits already exist | Either delete `data/train.csv`/`data/val.csv` or rerun `split_data.py` with `--overwrite`. |
 | Model outputs non-numeric values | Utilities coerce invalid responses to `0.0` and log the event. Inspect worst-case samples to refine prompts. |
-
----
-
-## 11. Next Steps & Slide Outline
-
-- **Slides:** Update `slides/outline.md` with real metrics, plots, and API cost screenshots.
-- **Further automation:**
-	- Batch multiple prompt candidates per iteration (beam search / bandits).
-	- Experiment with provider/model combinations by adjusting CLI flags.
-	- Add CI workflows (GitHub Actions) to run smoke tests on push.
-- **Reproducibility diary:** Maintain a lab-notebook style log under `results/` capturing configuration, costs, and observations per experiment.
-
-For convenience, a starter deck outline is already provided in `slides/outline.md` with required sections listed in the project specification.
-
----
-
-Happy optimizing! If you encounter issues not covered here, capture the exact error message, check `logs/optimization.log`, and search with relevant keywords—or open an issue with reproduction steps.
