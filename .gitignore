@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment and secrets
+.env
+
+# macOS metadata
+.DS_Store
+
+# Data artifacts
+data/nutribench_v2_cot.csv
+data/train.csv
+data/val.csv
+results/
+logs/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Test artifacts
+.pytest_cache/

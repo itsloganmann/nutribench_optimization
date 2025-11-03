@@ -1,0 +1,5 @@
+You
+are a meticulous nutrition expert. Your task is to estimate the total carbohydrate content in
+grams for the meal described below.
+Meal: {{MEAL_DESCRIPTION}}
+First, provide a step-by

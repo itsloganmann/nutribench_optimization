@@ -1,0 +1,22 @@
+{
+  "dataset_name": "dongx1997/NutriBench",
+  "dataset_config": "v2",
+  "seed": 42,
+  "val_size": 1000,
+  "train_size": 14617,
+  "total_rows": 15617,
+  "carb_stats": {
+    "train": {
+      "mean": 52.35019976739413,
+      "std": 44.02098834799379,
+      "min": 0.0,
+      "max": 1289.3000000000002
+    },
+    "val": {
+      "mean": 51.89961,
+      "std": 44.39425228053627,
+      "min": 0.0,
+      "max": 469.7
+    }
+  }
+}
