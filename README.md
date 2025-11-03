@@ -15,7 +15,6 @@ Automatic prompt optimization for the NutriBench carbohydrate estimation benchma
 8. [Evaluation & Reporting](#8-evaluation--reporting)
 9. [API Cost Tracking](#9-api-cost-tracking)
 10. [Smoke Tests & Troubleshooting](#10-smoke-tests--troubleshooting)
-11. [Next Steps & Slide Outline](#11-next-steps--slide-outline)
 
 The repository is organised to prioritise reproducibility, logging, and deterministic data splits. All commands are intended for the macOS **zsh** shell.
 
