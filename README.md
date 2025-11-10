@@ -5,16 +5,15 @@ Automatic prompt optimization for the NutriBench carbohydrate estimation benchma
 ## 📋 Table of Contents
 
 0. [Key Deliverables](#key-deliverables)
-1. [Initial Mac Setup](#1-initial-mac-setup)
-2. [Create Project Workspace](#2-create-project-workspace)
-3. [Install Python Dependencies](#3-install-python-dependencies)
-4. [Configure API Keys](#4-configure-api-keys)
-5. [Download & Split NutriBench](#5-download--split-nutribench)
-6. [Project Layout](#6-project-layout)
-7. [ProTeGi Optimization Pipeline](#7-protegi-optimization-pipeline)
-8. [Evaluation & Reporting](#8-evaluation--reporting)
-9. [API Cost Tracking](#9-api-cost-tracking)
-10. [Smoke Tests & Troubleshooting](#10-smoke-tests--troubleshooting)
+1. [Create Project Workspace](#2-create-project-workspace)
+2. [Install Python Dependencies](#3-install-python-dependencies)
+3. [Configure API Keys](#4-configure-api-keys)
+4. [Download & Split NutriBench](#5-download--split-nutribench)
+5. [Project Layout](#6-project-layout)
+6. [ProTeGi Optimization Pipeline](#7-protegi-optimization-pipeline)
+7. [Evaluation & Reporting](#8-evaluation--reporting)
+8. [API Cost Tracking](#9-api-cost-tracking)
+9. [Smoke Tests & Troubleshooting](#10-smoke-tests--troubleshooting)
 
 The repository is organised to prioritise reproducibility, logging, and deterministic data splits. All commands are intended for the macOS **zsh** shell.
 
@@ -27,30 +26,7 @@ The repository is organised to prioritise reproducibility, logging, and determin
 - **Prompt snapshots & artifacts** under `prompts/` and `results/` (ignored by default but regenerable through the optimisation CLI) to trace the textual gradient descent process.
 - **Presentation outline** (`slides/outline.md`) aligning with project specs for quick deck assembly.
 
-## 1. Initial Mac Setup
-
-1. Upgrade macOS: Apple  → **About This Mac** → **Software Update**.
-2. Install command line tools:
-
-	 ```bash
-	 xcode-select --install
-	 ```
-
-3. Install Homebrew (copy-paste into Terminal):
-
-	 ```bash
-	 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	 ```
-
-4. Update Homebrew:
-
-	 ```bash
-	 brew update
-	 ```
-
----
-
-## 2. Create Project Workspace
+## 1. Create Project Workspace
 
 ```bash
 mkdir -p ~/nutribench_optimization
